@@ -1,0 +1,58 @@
+//в какой директории создать общий файл для всех цветов
+// и подключить к остальным .sccs??
+$first-color: #0044f0;
+.catalog {
+    overflow-x: hidden;
+    padding-bottom: 20px;
+
+    @media (mini-width: 768px) {
+        padding-bottom: 32px;
+    }
+
+    @media (mini-width: 1440px) {
+        padding-bottom: 40px;
+    }
+
+    
+    &__list {
+        display: flex;
+        gap: 4px;
+        box-sizing: border-box;
+    }
+
+    &__item {
+        box-sizing: border-box;
+    }
+
+    &__link {
+        display: block;
+        color: #969EAE;
+        background-color: #EEEFF2;
+        padding: 11px 14px 13px;
+        border-radius: 32px;
+        align-content: center;
+        border: 1px solid #EEEFF2;
+        
+    
+        &:hover{
+            color: #0044f0;
+            border: 1px solid #0044f0;
+           
+            
+        }
+
+        &_active{
+            color: #ffffff;
+            background-color: $first-color;
+            
+
+            &:hover{
+                color: #0044f0;
+                border: 1px solid #0044f0;
+                background-color:  #EEEFF2;
+                
+         
+        }
+    }
+}
+}

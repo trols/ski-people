@@ -383,11 +383,33 @@ crossorigin
     </section>
 
     <section class="product">
-        <div class="container">
+        <div class="container product__container">
             <h2 class="product__title">Горные лыжи</h2>
+            <div class="product__description">
             <div class="product__slider">
-                <div class="product__slider-image"></div>
-                <div class="product__slider-thubnails"></div>
+                <img class="product__slider-image" src="/img/photo.png"/>
+                <ul class="product__slider-thumbnails slider-thumbnails">
+                    <li class="slider-thumbnails__item">
+                        <img src="/img/photo-1.png" 
+                            alt="" 
+                            class="slider__thumbnails__image" />
+                    </li>
+                    <li class="slider-thumbnails__item">
+                        <img src="/img/photo-1.png" 
+                            alt="" 
+                            class="slider__thumbnails__image" />
+                    </li>
+                    <li class="slider-thumbnails__item">
+                        <img src="/img/photo-1.png" 
+                            alt="" 
+                            class="slider__thumbnails__image" />
+                    </li>
+                    <li class="slider-thumbnails__item">
+                        <img src="/img/photo-1.png" 
+                            alt="" 
+                            class="slider__thumbnails__image" />
+                    </li>
+                </ul>
             </div>
             <div class="product__info">
                 <p class="product__info-price">5&nbsp;000&nbsp;₽</p>
@@ -419,8 +441,9 @@ crossorigin
                         <td class="product__table-item">130 кг</td>
                     </tr>
                 </table>
-                <button class="product__button" type="button">В корзину</button>
-                <button class="product__like-button">
+                <div class="info-buttons">
+                <button class="info-buttons__to-cart" type="button">В корзину</button>
+                <button class="info-buttons__like">
                     <svg 
                         width="16" 
                         height="16" 
@@ -437,11 +460,13 @@ crossorigin
                     </svg>
                 </button>
             </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <section class="cart">
-        <div class="container">
+        <div class="container product__container">
             <h2 class="cart__title">Корзина</h2>
             <ul class="cart__list">
                 <li class="cart__item">

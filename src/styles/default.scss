@@ -75,6 +75,8 @@ ul {
 
 .container {
   padding: 0 16px;
+  margin: 0 auto;
+  max-width: 1200px;
   
   @media (min-width: 768px) {
     padding: 0 29px;

@@ -5,12 +5,14 @@ $first-color: #0044f0;
     overflow-x: hidden;
     padding-bottom: 20px;
 
+   
     @media (mini-width: 768px) {
         padding-bottom: 32px;
     }
 
     @media (mini-width: 1440px) {
         padding-bottom: 40px;
+        
     }
 
     

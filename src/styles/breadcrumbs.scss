@@ -1,0 +1,31 @@
+.breadcrumbs {
+
+    // .breadcrumbs__list
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #969eae;
+        font-size: 12px;
+
+    }
+
+    // .breadcrumbs__item
+
+    &__item {
+        &:not(:last-child){
+            &::after{
+                margin-left: 6px;
+                content: ">";
+            }
+        }
+    }
+
+    // .breadcrumbs__link
+
+    &__link {
+    }
+}
+.container {
+}
